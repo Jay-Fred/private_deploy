@@ -1,0 +1,5 @@
+#本次新增内容
+#Nginx隐藏版本号
+#脚本判断用户及用户组是否存在，不存在自动创建用户及组并修改初始密码
+#lhwork用户及mysql root用户及redis密码皆为:HzN8m%cr!Vve
+#tomcat注释AJP配置
