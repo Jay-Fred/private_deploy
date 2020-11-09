@@ -29,4 +29,5 @@
 
     2、部署
         1）首先运行network.py进行网络检测，确保网络环境正常
-        2）运行install.py,脚本会根据应用个数自动部署单机版或集群版，日志输出到install.log
+        2）服务器端运行web.py,等待客户端POST请求在/tmp目录下生成拓扑图
+        3）运行install.py,脚本会根据应用个数自动部署单机版或集群版，日志输出到install.log
