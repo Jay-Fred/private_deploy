@@ -184,6 +184,8 @@ def start_tomcat():
         print("\n","  开始启动 " + list1[j].split(' ')[0] + '  ' + list1[j].split(' ')[1]  + '  ' + s())
         install(list1[j].split(' ')[0], user_root, passwd_root, "source /etc/profile;su - "+ common_user + ' ' + tomcat_dir+list1[j].split(' ')[1]+"/bin/startup.sh >/dev/null 2>&1")
 ################################## 向flask web服务器发送POST请求 ##################################
+################################## url1 生成流程图 ##################################
+################################## url1 生成拓扑图 ##################################
 def network_map():
     url1 = 'http://10.1.90.216:9090'
     url2 = 'http://10.1.90.216:9090/test'
