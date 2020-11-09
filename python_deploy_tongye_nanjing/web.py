@@ -5,6 +5,7 @@ import json,time,datetime
 app = Flask(__name__)
 today_time = lambda:time.strftime('%Y-%m-%d_%H_%M_%S')
 
+################################## / 请求路径生成流程图 ##################################
 @app.route('/', methods=['POST'])
 def get_data1():
     g = Digraph('G', format="pdf")
@@ -150,6 +151,8 @@ def get_data1():
     g.render(filename="/tmp/liucheng_" + str(today_time()), view=False)
     return data
 
+
+################################## /test 请求路径生成拓扑图 ##################################
 @app.route('/test', methods=['POST'])
 def get_data2():
     dot = Graph('G', format="pdf")
